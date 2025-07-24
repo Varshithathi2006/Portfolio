@@ -33,19 +33,23 @@ const Hero = () => {
           </a>
           <div className="flex space-x-4">
             <a
-              href="#"
+              href="https://github.com/Varshithathi2006"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 bg-slate-700/50 rounded-full hover:bg-slate-600/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-slate-500/25"
             >
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/varshitha-thilak-kumar-56a668315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 bg-slate-700/50 rounded-full hover:bg-slate-600/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-slate-500/25"
             >
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="mailto:varshithathi006@gamil.com"
               className="p-3 bg-slate-700/50 rounded-full hover:bg-slate-600/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-slate-500/25"
             >
               <Mail className="w-6 h-6" />

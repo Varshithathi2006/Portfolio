@@ -4,22 +4,31 @@ import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 const Education = () => {
   const educationData = [
     {
-      degree: 'Master of Science in Artificial Intelligence',
-      institution: 'Stanford University',
-      location: 'Stanford, CA',
-      period: '2022 - 2024',
-      description: 'Specialized in machine learning, deep learning, and neural networks. Thesis on transformer architectures for natural language processing.',
-      achievements: ['GPA: 3.9/4.0', 'Research Assistant', 'AI Ethics Committee Member'],
+      degree: 'Bachelor of Technology inComputer Science and Engineering-Artificial Intelligence',
+      institution: 'Amrita Vishwa Vidyapeetham',
+      location: 'Ettimadai,Coimbatore',
+      period: '2023 - 2027',
+      description: ' I am basically a philomath passionate and driven individual with a keen interest in technology and innovation. Enjoy exploring AI, coding, and building practical solutions to real-world problems.With a blend of creativity and technical skills, would love to thrive in collaborative environments.Always eager to learn, continuously seek opportunities to grow and make a positive impact.',
+      achievements: ['GPA: 8.47/10', 'CSE-AI'],
       color: 'from-blue-500 to-cyan-400'
     },
     {
-      degree: 'Bachelor of Technology in Computer Science',
-      institution: 'Indian Institute of Technology',
-      location: 'Mumbai, India',
-      period: '2018 - 2022',
-      description: 'Comprehensive computer science education with focus on algorithms, data structures, and software engineering principles.',
-      achievements: ['Magna Cum Laude', 'President, AI Club', 'Dean\'s List (4 semesters)'],
-      color: 'from-purple-500 to-pink-400'
+      degree: '12th grade',
+      institution: 'Velammal Vidyalaya',
+      location: 'Mel-Ayyanambakkam,Chennai',
+      period: '2023',
+      description: '',
+      color: 'from-purple-500 to-pink-400',
+      achievements: ['I have completed my 12th grade in the year 2023 with a score of 87.2%']
+    },
+    {
+      degree: '10th grade',
+      institution: 'Maharishi Vidya Mandir',
+      location: 'Mangadu,Chennai',
+      period: '2021',
+      description: '',
+      color: 'from-purple-500 to-pink-400',
+      achievements: ['I have completed my 10th grade in the year 2023 with a score of 93.6%']
     }
   ];
 
