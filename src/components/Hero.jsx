@@ -1,15 +1,19 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
+import profileImg from '../assets/profile.jpg';
+import resumePDF from '../assets/Varshitha_Thilak_Kumar_Resume.pdf';
 
 const Hero = () => {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center px-6 lg:px-12">
       <div className="max-w-4xl mx-auto text-center animate-on-scroll">
         <div className="mb-8">
-          <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
-            <div className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center">
-              <span className="text-4xl font-bold text-white">VT</span>
-            </div>
+          <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1 flex items-center justify-center overflow-hidden">
+            <img
+              src={profileImg}
+              alt="Profile"
+              className="w-full h-full object-cover rounded-full"
+            />
           </div>
           <h1 className="text-5xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
             Varshitha Thilak Kumar
@@ -25,7 +29,8 @@ const Hero = () => {
 
         <div className="flex flex-wrap justify-center gap-4 mb-8">
           <a
-            href="#"
+            href={resumePDF}
+            download="Varshitha_Thilak_Kumar_Resume.pdf"
             className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full hover:from-blue-500 hover:to-purple-500 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
           >
             <Download className="w-5 h-5" />
