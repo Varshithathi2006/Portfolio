@@ -46,7 +46,7 @@ const Hero = () => {
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="https://www.linkedin.com/in/varshitha-thilak-kumar-56a668315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              href="www.linkedin.com/in/varshitha-thilak-kumar-56a668315"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-slate-700/50 rounded-full hover:bg-slate-600/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-slate-500/25"
