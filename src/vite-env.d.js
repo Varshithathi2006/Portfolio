@@ -1,0 +1,1 @@
+// Converted from vite-env.d.ts. No JavaScript code needed. 

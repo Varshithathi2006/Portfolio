@@ -1,0 +1,60 @@
+import React from 'react';
+import { Github, Linkedin, Mail, Download } from 'lucide-react';
+
+const Hero = () => {
+  return (
+    <section id="hero" className="min-h-screen flex items-center justify-center px-6 lg:px-12">
+      <div className="max-w-4xl mx-auto text-center animate-on-scroll">
+        <div className="mb-8">
+          <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
+            <div className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center">
+              <span className="text-4xl font-bold text-white">VT</span>
+            </div>
+          </div>
+          <h1 className="text-5xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
+            Varshitha Thilak Kumar
+          </h1>
+          <p className="text-xl lg:text-2xl text-slate-300 mb-6">
+            Aspiring AI Engineer
+          </p>
+          <p className="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+            Passionate about artificial intelligence, machine learning, and creating innovative solutions 
+            that bridge the gap between cutting-edge technology and real-world applications.
+          </p>
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-4 mb-8">
+          <a
+            href="#"
+            className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full hover:from-blue-500 hover:to-purple-500 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
+          >
+            <Download className="w-5 h-5" />
+            <span>Download Resume</span>
+          </a>
+          <div className="flex space-x-4">
+            <a
+              href="#"
+              className="p-3 bg-slate-700/50 rounded-full hover:bg-slate-600/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-slate-500/25"
+            >
+              <Github className="w-6 h-6" />
+            </a>
+            <a
+              href="#"
+              className="p-3 bg-slate-700/50 rounded-full hover:bg-slate-600/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-slate-500/25"
+            >
+              <Linkedin className="w-6 h-6" />
+            </a>
+            <a
+              href="#"
+              className="p-3 bg-slate-700/50 rounded-full hover:bg-slate-600/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-slate-500/25"
+            >
+              <Mail className="w-6 h-6" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero; 
