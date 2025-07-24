@@ -23,7 +23,11 @@ const Awards = () => {
       title: 'IEEE Conference Paper Presenter',
       organization: 'ETIS, Trivandrum – IEEE',
       date: 'April 2024',
-      description: 'Presented a paper on “Time-Frequency Analysis on PQD” using advanced signal processing techniques. Published in IEEE Xplore.',
+      description: (
+        <>
+          Presented a paper on “Time-Frequency Analysis on PQD” using advanced signal processing techniques. Published in IEEE Xplore. <a href="https://ieeexplore.ieee.org/document/10961578" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline ml-1">View Paper</a>
+        </>
+      ),
       icon: Trophy,
       color: 'from-yellow-500 to-orange-400'
     },
