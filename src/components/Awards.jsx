@@ -4,6 +4,23 @@ import { Award, Trophy, Medal, Star } from 'lucide-react';
 const Awards = () => {
   const awards = [
     {
+      title: 'OCI Foundations Certification',
+      organization: 'Oracle',
+      date: 'july 2025',
+      description: 'Completed hands-on training in Artificial Intelligence & Machine Learning over a month intensive course.',
+      icon: Star,
+      color: 'from-green-500 to-teal-400'
+    }
+  ,
+  {
+      title: 'Gen AI Academy Certification',
+      organization: 'Google via H2S',
+      date: 'August 2025',
+      description: 'Completed hands-on training in Google AI cloud.',
+      icon: Star,
+      color: 'from-green-500 to-teal-400'
+    },
+    {
       title: 'AI & ML Certification',
       organization: 'Plasmid Edutech',
       date: 'October 2023',
@@ -36,6 +53,14 @@ const Awards = () => {
       organization: 'Value Health Org',
       date: 'February 2024',
       description: 'Selected as finalist for “GenJournals,” an AI-powered mental health journaling tool designed with contextual NLP.',
+      icon: Medal,
+      color: 'from-purple-500 to-pink-400'
+    },
+    {
+      title: 'Code Cublicle 5.0',
+      organization: 'GeekRooms',
+      date: 'September2025',
+      description: 'Selected as finalist for Code Cubicle 5.0 an AI-powered realtime transit .',
       icon: Medal,
       color: 'from-purple-500 to-pink-400'
     }

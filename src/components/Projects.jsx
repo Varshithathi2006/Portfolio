@@ -71,13 +71,14 @@ const Projects = () => {
       github: 'https://github.com/Varshithathi2006/Optimization-using-ADMM'
     },
     {
-      title: 'Text to Morse Code Converter',
-      description: 'Created a Java-based GUI application that converts English text to Morse code with slider controls for speed and volume.',
+      title: 'Movies Inferno',
+      description: 'Mini Netflix Platform where you can add movies to your watchlist and view details.',
       icon: 'MessageCircle',
-      tech: ['Java', 'Swing', 'OOP'],
+      tech: ['React', 'API Integration', 'PostgreSQl','vercel'],
       gradient: 'from-red-500 to-orange-400',
-      link: '#',
-      github: 'https://github.com/Varshithathi2006/Morse_Code_Converter'
+      link: 'https://movie-inferno-dbms-cloud.vercel.app/ ',
+      github: 'https://github.com/Varshithathi2006/MovieInferno_DBMS_Cloud'
+
     },
     {
       title: 'Canteen Management System',
