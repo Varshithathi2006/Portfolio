@@ -4,7 +4,7 @@ import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 const Education = () => {
   const educationData = [
     {
-      degree: 'Bachelor of Technology inComputer Science and Engineering-Artificial Intelligence',
+      degree: 'Bachelor of Technology in Computer Science and Engineering-Artificial Intelligence',
       institution: 'Amrita Vishwa Vidyapeetham',
       location: 'Ettimadai,Coimbatore',
       period: '2023 - 2027',

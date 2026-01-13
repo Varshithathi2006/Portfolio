@@ -1,7 +1,7 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import profileImg from '../assets/profile.jpg';
-import resumePDF from '../assets/Varshitha_Thilak_Kumar_Resume.pdf';
+import resumePDF from '../assets/Varshitha Thilak Kumar.pdf';
 
 const Hero = () => {
   return (
@@ -22,7 +22,7 @@ const Hero = () => {
             Aspiring AI Engineer
           </p>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            Passionate about artificial intelligence, machine learning, and creating innovative solutions 
+            Passionate about artificial intelligence, machine learning, and creating innovative solutions
             that bridge the gap between cutting-edge technology and real-world applications.
           </p>
         </div>
