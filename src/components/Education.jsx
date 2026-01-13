@@ -9,7 +9,7 @@ const Education = () => {
       location: 'Ettimadai,Coimbatore',
       period: '2023 - 2027',
       description: ' I am basically a philomath passionate and driven individual with a keen interest in technology and innovation. Enjoy exploring AI, coding, and building practical solutions to real-world problems.With a blend of creativity and technical skills, would love to thrive in collaborative environments.Always eager to learn, continuously seek opportunities to grow and make a positive impact.',
-      achievements: ['GPA: 8.47/10', 'CSE-AI'],
+      achievements: ['GPA: 8.5/10', 'CSE-AI'],
       color: 'from-blue-500 to-cyan-400'
     },
     {
@@ -56,7 +56,7 @@ const Education = () => {
             >
               {/* Timeline Dot */}
               <div className={`absolute -left-12 top-8 w-6 h-6 rounded-full bg-gradient-to-r ${edu.color} hidden md:block shadow-lg`}></div>
-              
+
               <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-700/50 p-8 hover:border-slate-600/50 transition-all duration-300">
                 <div className="flex items-start justify-between mb-4">
                   <div className={`w-12 h-12 rounded-xl bg-gradient-to-r ${edu.color} p-3 md:hidden`}>
@@ -67,7 +67,7 @@ const Education = () => {
                     <h4 className="text-xl text-blue-300 mb-2">{edu.institution}</h4>
                   </div>
                 </div>
-                
+
                 <div className="flex flex-wrap gap-4 mb-4 text-slate-400">
                   <div className="flex items-center space-x-2">
                     <Calendar className="w-4 h-4" />
@@ -78,9 +78,9 @@ const Education = () => {
                     <span>{edu.location}</span>
                   </div>
                 </div>
-                
+
                 <p className="text-slate-300 mb-4 leading-relaxed">{edu.description}</p>
-                
+
                 <div>
                   <h5 className="text-white font-semibold mb-2">Key Achievements:</h5>
                   <div className="flex flex-wrap gap-2">
