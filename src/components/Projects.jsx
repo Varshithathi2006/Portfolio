@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Bot, BarChart3 } from 'lucide-react';
+import { Github, Bot, BarChart3, Popcorn } from 'lucide-react';
 
 // Fallback icon for any missing icons
 const FallbackIcon = Bot;
@@ -12,7 +12,8 @@ const iconMap = {
   Waves: FallbackIcon,
   LineChart: BarChart3,
   MessageCircle: FallbackIcon,
-  ClipboardList: FallbackIcon
+  ClipboardList: FallbackIcon,
+  Popcorn: Popcorn
 };
 
 const Projects = () => {
@@ -30,7 +31,7 @@ const Projects = () => {
       title: 'Movies Inferno',
       description: 'Movie Inferno is a cloud-based movie management and recommendation platform that integrates a structured database, real-time updates, and an AI-powered chatbot for personalized movie suggestions. ',
       icon: 'Popcorn',
-      tech: ['Python', 'Raspberry Pi 4B', 'Pygame', 'OpenGL'],
+      tech: ['Next.js', 'Supabase', 'TMDB API', 'Chatbot', 'Vercel'],
       gradient: 'from-purple-500 to-pink-400',
       link: 'https://movie-inferno-dbms-cloud.vercel.app/#',
       github: 'https://github.com/Varshithathi2006/MovieInferno_DBMS_Cloud'
