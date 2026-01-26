@@ -96,7 +96,7 @@ const ScrollStory = () => {
         },
         {
             title: "The Vision",
-            text: "Now, the focus shifts to creating experiences that matter. Building interfaces that feel alive, intuitive, and seamless. It's not just about functionality anymore; it's about the story the content tells as it flows across the screen.",
+            text: "Now, the focus shifts to creating experiences that matter. Building interfaces that feel alive, intuitive, and seamless. It's not just about functionality anymore; it's about the story the content tells as it flows across the screen.Long term goal is to fuse AI,Music and writings. ",
             imageUrl: storyVision
         }
     ];
