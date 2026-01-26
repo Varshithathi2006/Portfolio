@@ -27,13 +27,13 @@ const Projects = () => {
       github: 'https://github.com/Varshithathi2006/Phishing_Website_Detection-FAI'
     },
     {
-      title: 'Smart Forklift Prototype',
-      description: 'Designed an automated forklift simulation using Raspberry Pi and Pygame with stress visualization and predictive maintenance logic.',
-      icon: 'Truck',
+      title: 'Movies Inferno',
+      description: 'Movie Inferno is a cloud-based movie management and recommendation platform that integrates a structured database, real-time updates, and an AI-powered chatbot for personalized movie suggestions. ',
+      icon: 'Popcorn',
       tech: ['Python', 'Raspberry Pi 4B', 'Pygame', 'OpenGL'],
       gradient: 'from-purple-500 to-pink-400',
-      link: '#',
-      github: 'https://github.com/Varshithathi2006/Automatic_Forklift_prototype'
+      link: 'https://movie-inferno-dbms-cloud.vercel.app/#',
+      github: 'https://github.com/Varshithathi2006/MovieInferno_DBMS_Cloud'
     },
     {
       title: 'DDoS Detection in SDN',
@@ -62,15 +62,6 @@ const Projects = () => {
       github: 'https://github.com/Varshithathi2006/Time-Frequency-Analysis-of-PQD-using-Signal-Processing-techniques'
     },
     {
-      title: 'Statistical Analysis Using ADMM',
-      description: 'Explored Graphical Lasso and ADMM methods for statistical modeling and visualization using mathematical derivations.',
-      icon: 'LineChart',
-      tech: ['Mathematics', 'Graphical Lasso', 'ADMM'],
-      gradient: 'from-rose-500 to-pink-400',
-      link: '#',
-      github: 'https://github.com/Varshithathi2006/Optimization-using-ADMM'
-    },
-    {
       title: 'Text to Morse Code Converter',
       description: 'Created a Java-based GUI application that converts English text to Morse code with slider controls for speed and volume.',
       icon: 'MessageCircle',
@@ -87,7 +78,7 @@ const Projects = () => {
       gradient: 'from-slate-600 to-gray-400',
       link: '#',
       github: 'https://github.com/Varshithathi2006/Canteen_Management_System'
-    }    
+    }
   ];
 
   return (
@@ -114,15 +105,15 @@ const Projects = () => {
                 <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${project.gradient} p-4 mb-6 group-hover:shadow-lg group-hover:shadow-blue-500/25 transition-shadow`}>
                   <Icon className="w-8 h-8 text-white" />
                 </div>
-                
+
                 <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-blue-300 transition-colors">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-slate-400 mb-6 leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech) => (
                     <span
@@ -133,7 +124,7 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                
+
                 <div className="flex space-x-4">
                   <a
                     href={project.github}
