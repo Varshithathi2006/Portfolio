@@ -12,7 +12,7 @@ const Skills = () => {
     {
       title: 'Programming',
       icon: Code2,
-      skills: ['Python', 'JavaScript', 'R', 'Java', 'C++'],
+      skills: ['Python', 'C++', 'Js'],
       color: 'from-purple-500 to-pink-400'
     },
     {
@@ -30,7 +30,7 @@ const Skills = () => {
     {
       title: 'Databases',
       icon: Database,
-      skills: ['PostgreSQL', 'MongoDB', 'Redis', 'SQL', 'NoSQL'],
+      skills: ['PostgreSQL', 'MongoDB', 'SQL', 'NoSQL'],
       color: 'from-orange-500 to-red-400'
     },
     {
