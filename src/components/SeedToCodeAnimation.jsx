@@ -70,9 +70,9 @@ const SeedToCodeAnimation = () => {
                         }
                     }}
                 >
-                    <span className="text-3xl font-bold text-blue-400 drop-shadow-[0_0_10px_rgba(96,165,250,0.8)]">{`{ }`}</span>
-                    <span className="text-3xl font-bold text-purple-400 drop-shadow-[0_0_10px_rgba(192,132,252,0.8)]">{`</>`}</span>
-                    <span className="text-3xl font-bold text-indigo-400 drop-shadow-[0_0_10px_rgba(129,140,248,0.8)] animate-pulse">_</span>
+                    <span className="text-3xl font-bold text-emerald-400 drop-shadow-[0_0_10px_rgba(96,165,250,0.8)]">{`{ }`}</span>
+                    <span className="text-3xl font-bold text-teal-400 drop-shadow-[0_0_10px_rgba(192,132,252,0.8)]">{`</>`}</span>
+                    <span className="text-3xl font-bold text-cyan-400 drop-shadow-[0_0_10px_rgba(129,140,248,0.8)] animate-pulse">_</span>
                 </motion.div>
 
             </motion.div>

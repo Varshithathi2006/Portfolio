@@ -40,7 +40,7 @@ const Card = ({ title, text, imageUrl, index, total, range }) => {
                 className="relative flex flex-col md:flex-row items-center gap-8 p-8 md:p-12 w-full max-w-5xl h-[60vh] md:h-[500px] bg-slate-900/80 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl sticky"
             >
                 {/* Visual Side */}
-                <div className="w-full md:w-1/2 h-full rounded-2xl overflow-hidden bg-gradient-to-br from-purple-900/20 to-blue-900/20 border border-white/5 relative group">
+                <div className="w-full md:w-1/2 h-full rounded-2xl overflow-hidden bg-gradient-to-br from-teal-900/20 to-emerald-900/20 border border-white/5 relative group">
                     <div className="absolute inset-0 bg-black/20" />
                     <div className="w-full h-full flex items-center justify-center relative z-10 transition-transform duration-700 hover:scale-105">
                         {imageUrl ? (
@@ -65,7 +65,7 @@ const Card = ({ title, text, imageUrl, index, total, range }) => {
 
                 {/* Content Side */}
                 <div className="w-full md:w-1/2 flex flex-col justify-center">
-                    <h3 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400 mb-6">
+                    <h3 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-400 mb-6">
                         {title}
                     </h3>
                     <StoryText text={text} />
@@ -86,24 +86,24 @@ const ScrollStory = () => {
     const chapters = [
         {
             title: "The Beginning",
-            text: "Every great journey starts with a single line of code. It began with curiosity—a simple 'Hello World' that opened the door to infinite possibilities. Late nights, endless documentation, and the thrill of solving the puzzle.",
+            text: "My journey started with a fascination for data and its potential. From building foundational skills in Web Development (MERN) to exploring the depths of Machine Learning, every line of code was a step towards solving real-world challenges.",
             imageUrl: storyBeginning
         },
         {
-            title: "The Growth",
-            text: "Challenges became stepping stones. Learning React, mastering data structures, and understanding that styling is an art form. Each project added a new layer of depth, transforming isolated scripts into cohesive applications.",
+            title: "The Action",
+            text: "I didn't just learn; I built. Competing in hackathons like Cubicle Code 5.0 and GenAI Hackathon pushed me to innovate under pressure. Developing tools like 'GenJournals' proved that AI can create meaningful impacts in people's lives.",
             imageUrl: storyGrowth
         },
         {
             title: "The Vision",
-            text: "Now, the focus shifts to creating experiences that matter. Building interfaces that feel alive, intuitive, and seamless. It's not just about functionality anymore; it's about the story the content tells as it flows across the screen.Long term goal is to fuse AI,Music and writings. ",
+            text: "Today, my focus fuses Artificial Intelligence, Big Data, and Cloud technologies, validated by certifications like Oracle Foundation Associate. From presenting research at IEEE to full-stack implementation, my goal is to architect intelligent systems that blend technical rigor with tangible value.",
             imageUrl: storyVision
         }
     ];
 
     return (
         <div ref={containerRef} className="relative bg-slate-950 pb-40">
-            <div className="pt-20 pb-10 text-center sticky top-0 z-0 opacity-50">
+            <div className="pt-20 pb-10 text-center sticky top-0 z-0 opacity-80">
                 <h2 className="text-4xl font-bold text-white mb-2">My Journey</h2>
                 <p className="text-gray-400">Scroll to explore</p>
             </div>

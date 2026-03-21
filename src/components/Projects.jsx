@@ -19,77 +19,69 @@ const iconMap = {
 const Projects = () => {
   const projects = [
     {
-      title: 'Phishing Website Detection',
-      description: 'Built a machine learning system to detect phishing websites by analyzing features and improving classification accuracy.',
-      icon: 'ShieldCheck',
-      tech: ['Python', 'Scikit-learn', 'Pandas', 'ML'],
-      gradient: 'from-blue-500 to-cyan-400',
+      title: 'Oil Spill Detection',
+      description: 'An AI-powered system designed to detect oil spills from satellite imagery using advanced computer vision techniques, helping protect marine ecosystems.',
+      icon: 'Waves',
+      tech: ['Python', 'Deep Learning', 'Computer Vision'],
+      gradient: 'from-emerald-500 to-cyan-400',
       link: '#',
-      github: 'https://github.com/Varshithathi2006/Phishing_Website_Detection-FAI'
+      github: 'https://github.com/Varshithathi2006/Oil_Spill_Detection'
     },
     {
-      title: 'Movies Inferno',
-      description: 'Movie Inferno is a cloud-based movie management and recommendation platform that integrates a structured database, real-time updates, and an AI-powered chatbot for personalized movie suggestions. ',
-      icon: 'Popcorn',
-      tech: ['Next.js', 'Supabase', 'TMDB API', 'Chatbot', 'Vercel'],
-      gradient: 'from-purple-500 to-pink-400',
-      link: 'https://movie-inferno-dbms-cloud.vercel.app/#',
-      github: 'https://github.com/Varshithathi2006/MovieInferno_DBMS_Cloud'
+      title: 'GitHub Vulnerability Analytics',
+      description: 'A Big Data analytics pipeline that processes and analyzes vulnerability data from GitHub repositories to uncover security trends and insights.',
+      icon: 'ShieldCheck',
+      tech: ['Big Data', 'Spark', 'Python', 'Analytics'],
+      gradient: 'from-teal-500 to-cyan-400',
+      link: '#',
+      github: 'https://github.com/Varshithathi2006/GitHub_Vulnerability_Analytics_using_BigData'
+    },
+    {
+      title: 'ABMEL – Marketing Engagement Loop',
+      description: 'A predictive marketing analytics model that uses machine learning to optimize user engagement and improve marketing campaign ROI.',
+      icon: 'LineChart',
+      tech: ['Machine Learning', 'Data Analysis', 'Python'],
+      gradient: 'from-cyan-500 to-emerald-400',
+      link: '#',
+      github: 'https://github.com/Varshithathi2006/ABMEL---Marketing-Engagement-loop'
     },
     {
       title: 'DDoS Detection in SDN',
-      description: 'Developed a real-time DDoS detection and mitigation system using ML algorithms in SDN environments with RYU controller.',
+      description: 'Real-time DDoS detection and mitigation system in Software Defined Networking environments utilizing machine learning algorithms.',
       icon: 'Activity',
-      tech: ['Python', 'Mininet', 'RYU', 'SVM', 'Random Forest'],
-      gradient: 'from-indigo-500 to-blue-400',
+      tech: ['Python', 'Mininet', 'RYU', 'ML Models'],
+      gradient: 'from-green-500 to-teal-400',
       link: '#',
       github: 'https://github.com/Varshithathi2006/DDoS-Detection-using-ML-in-SDN-env'
     },
     {
-      title: 'Eater Ease – Online Restaurant',
-      description: 'Built a fully responsive UI for a restaurant web application, enhancing user experience and improving frontend skills.',
-      icon: 'Utensils',
-      tech: ['HTML', 'CSS', 'JavaScript', 'Responsive Web Design'],
-      gradient: 'from-green-500 to-teal-400',
-      link: '#',
-      github: 'https://github.com/Varshithathi2006/Responsive_Restaurant_website_using-HTML_CSS_Js'
-    },
-    {
-      title: 'Time-Frequency Analysis on PQD',
-      description: 'Applied advanced signal processing techniques in MATLAB to analyze power quality disturbances and waveform anomalies.',
-      icon: 'Waves',
-      tech: ['MATLAB', 'Signal Processing'],
+      title: 'MovieInferno DBMS Cloud',
+      description: 'Cloud-based movie management platform integrating a structured database with an AI chatbot for personalized movie suggestions.',
+      icon: 'Popcorn',
+      tech: ['Next.js', 'Supabase', 'Cloud DB', 'API'],
       gradient: 'from-yellow-500 to-orange-400',
-      github: 'https://github.com/Varshithathi2006/Time-Frequency-Analysis-of-PQD-using-Signal-Processing-techniques'
+      link: 'https://movie-inferno-dbms-cloud.vercel.app/#',
+      github: 'https://github.com/Varshithathi2006/MovieInferno_DBMS_Cloud'
     },
     {
-      title: 'Text to Morse Code Converter',
-      description: 'Created a Java-based GUI application that converts English text to Morse code with slider controls for speed and volume.',
-      icon: 'MessageCircle',
-      tech: ['Java', 'Swing', 'OOP'],
+      title: 'Cryptography Web Applications',
+      description: 'A suite of web-based cryptographic tools demonstrating various encryption algorithms and secure communication protocols.',
+      icon: 'ShieldCheck',
+      tech: ['Cryptography', 'Web Security', 'Algorithms'],
       gradient: 'from-red-500 to-orange-400',
       link: '#',
-      github: 'https://github.com/Varshithathi2006/Morse_Code_Converter'
-    },
-    {
-      title: 'Canteen Management System',
-      description: 'Developed a command-line based canteen order and inventory management tool, reinforcing core concepts in C programming.',
-      icon: 'ClipboardList',
-      tech: ['C', 'File Handling', 'Data Structures'],
-      gradient: 'from-slate-600 to-gray-400',
-      link: '#',
-      github: 'https://github.com/Varshithathi2006/Canteen_Management_System'
+      github: 'https://github.com/Varshithathi2006/Cryptography_and_its_web_applications'
     }
   ];
 
   return (
-    <section id="projects" className="py-20 px-6 lg:px-12">
+    <section id="projects" className="py-20 px-6 lg:px-12 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-on-scroll">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-[#EA4326] dark:text-emerald-400 transition-colors">
             Featured Projects
           </h2>
-          <p className="text-xl text-slate-400">
+          <p className="text-xl text-slate-600 dark:text-slate-400 transition-colors">
             Innovative AI solutions and machine learning applications
           </p>
         </div>
@@ -100,18 +92,18 @@ const Projects = () => {
             return (
               <div
                 key={project.title}
-                className="animate-on-scroll group relative p-8 bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-700/50 hover:border-slate-600/50 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-2xl"
+                className="animate-on-scroll group relative p-8 bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-200 dark:border-slate-700/50 hover:border-emerald-500/50 transition-all duration-500 hover:transform hover:scale-105 shadow-sm hover:shadow-xl dark:shadow-none"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${project.gradient} p-4 mb-6 group-hover:shadow-lg group-hover:shadow-blue-500/25 transition-shadow`}>
+                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${project.gradient} p-4 mb-6 group-hover:shadow-lg group-hover:shadow-emerald-500/25 transition-shadow`}>
                   <Icon className="w-8 h-8 text-white" />
                 </div>
 
-                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-blue-300 transition-colors">
+                <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
                   {project.title}
                 </h3>
 
-                <p className="text-slate-400 mb-6 leading-relaxed">
+                <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed transition-colors">
                   {project.description}
                 </p>
 
@@ -119,7 +111,7 @@ const Projects = () => {
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-slate-700/50 rounded-full text-sm font-medium text-slate-300"
+                      className="px-3 py-1 bg-slate-100 dark:bg-slate-700/50 rounded-full text-sm font-medium text-slate-600 dark:text-slate-300 transition-colors"
                     >
                       {tech}
                     </span>
@@ -129,7 +121,7 @@ const Projects = () => {
                 <div className="flex space-x-4">
                   <a
                     href={project.github}
-                    className="flex items-center space-x-2 px-4 py-2 bg-slate-700/50 rounded-lg hover:bg-slate-600/50 transition-all duration-300"
+                    className="flex items-center space-x-2 px-4 py-2 bg-slate-100 dark:bg-slate-700/50 text-slate-900 dark:text-white rounded-lg hover:bg-slate-200 dark:hover:bg-slate-600/50 transition-all duration-300"
                   >
                     <Github className="w-4 h-4" />
                     <span>Code</span>
