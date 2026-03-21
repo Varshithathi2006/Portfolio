@@ -6,7 +6,7 @@ import storyVision from '../assets/story_vision.png';
 
 const StoryText = ({ text }) => {
     return (
-        <p className="text-lg md:text-xl leading-relaxed text-gray-300">
+        <p className="text-lg md:text-xl leading-relaxed text-slate-700 dark:text-gray-300 transition-colors">
             {text}
         </p>
     );
@@ -37,17 +37,17 @@ const Card = ({ title, text, imageUrl, index, total, range }) => {
                     top: top,
                     scale: smoothScale,
                 }}
-                className="relative flex flex-col md:flex-row items-center gap-8 p-8 md:p-12 w-full max-w-5xl h-[60vh] md:h-[500px] bg-slate-900/80 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl sticky"
+                className="relative flex flex-col md:flex-row items-center gap-8 p-8 md:p-12 w-full max-w-5xl h-[60vh] md:h-[500px] bg-white/90 dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200 dark:border-white/10 rounded-3xl shadow-xl dark:shadow-2xl sticky transition-colors duration-300"
             >
                 {/* Visual Side */}
-                <div className="w-full md:w-1/2 h-full rounded-2xl overflow-hidden bg-gradient-to-br from-teal-900/20 to-emerald-900/20 border border-white/5 relative group">
-                    <div className="absolute inset-0 bg-black/20" />
+                <div className="w-full md:w-1/2 h-full rounded-2xl overflow-hidden bg-slate-100 dark:bg-gradient-to-br dark:from-teal-900/20 dark:to-emerald-900/20 border border-slate-200 dark:border-white/5 relative group transition-colors duration-300">
+                    <div className="absolute inset-0 bg-transparent dark:bg-black/20 transition-colors" />
                     <div className="w-full h-full flex items-center justify-center relative z-10 transition-transform duration-700 hover:scale-105">
                         {imageUrl ? (
                             <motion.img
                                 src={imageUrl}
                                 alt={title}
-                                className="w-full h-full object-cover opacity-90"
+                                className="w-full h-full object-cover opacity-90 transition-opacity"
                                 animate={{
                                     y: [0, -10, 0],
                                     scale: [1, 1.02, 1]
@@ -65,7 +65,7 @@ const Card = ({ title, text, imageUrl, index, total, range }) => {
 
                 {/* Content Side */}
                 <div className="w-full md:w-1/2 flex flex-col justify-center">
-                    <h3 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-400 mb-6">
+                    <h3 className="text-3xl md:text-5xl font-bold text-[#EA4326] dark:text-emerald-400 mb-6 transition-colors">
                         {title}
                     </h3>
                     <StoryText text={text} />
@@ -102,10 +102,10 @@ const ScrollStory = () => {
     ];
 
     return (
-        <div ref={containerRef} className="relative bg-slate-950 pb-40">
+        <div ref={containerRef} className="relative bg-white dark:bg-slate-950 pb-40 transition-colors duration-300">
             <div className="pt-20 pb-10 text-center sticky top-0 z-0 opacity-80">
-                <h2 className="text-4xl font-bold text-white mb-2">My Journey</h2>
-                <p className="text-gray-400">Scroll to explore</p>
+                <h2 className="text-4xl font-bold text-[#EA4326] dark:text-white mb-2 transition-colors">My Journey</h2>
+                <p className="text-slate-600 dark:text-gray-400 transition-colors">Scroll to explore</p>
             </div>
 
             <div className="relative">
