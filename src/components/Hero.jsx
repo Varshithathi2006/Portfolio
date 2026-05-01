@@ -1,7 +1,7 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import profileImg from '../assets/profile.jpg';
-import resumePDF from '../assets/Varshitha (1).pdf';
+import resumePDF from '../assets/V.pdf';
 
 const Hero = () => {
   return (
@@ -47,7 +47,7 @@ const Hero = () => {
             </a>
             <a
               href={resumePDF}
-              download="Varshitha_Resume.pdf"
+              download="V.pdf"
               className="flex items-center px-8 py-4 bg-transparent border-2 border-slate-900 dark:border-slate-400 text-slate-900 dark:text-slate-200 rounded-full font-bold hover:bg-slate-900 dark:hover:bg-slate-800 hover:text-white dark:hover:text-white transition-colors duration-300 focus:outline-none"
             >
               <Download className="w-5 h-5 mr-3" /> Get Resume
