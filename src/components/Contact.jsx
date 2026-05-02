@@ -1,7 +1,37 @@
-import React from 'react';
-import { Github, Linkedin, Mail, Send } from 'lucide-react';
+import React, { useState } from 'react';
+import { Github, Linkedin, Mail, Send, CheckCircle2 } from 'lucide-react';
 
 const Contact = () => {
+  const [status, setStatus] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setStatus('');
+    
+    const formData = new FormData(e.target);
+    // Disable captcha for AJAX
+    formData.append('_captcha', 'false');
+    
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/varshithathi006@gmail.com", {
+        method: "POST",
+        body: formData
+      });
+      
+      if (res.ok) {
+        setStatus("success");
+        e.target.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      setStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <section id="contact" className="py-20 px-6 lg:px-12 mb-20 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
@@ -67,12 +97,14 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="animate-on-scroll bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-200 dark:border-slate-700/50 p-8 shadow-xl dark:shadow-2xl transition-colors duration-300">
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 transition-colors">Send a Message</h3>
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-2 transition-colors">Your Name</label>
                 <input
                   type="text"
                   id="name"
+                  name="name"
+                  required
                   className="w-full bg-slate-50 dark:bg-slate-900/50 border border-slate-300 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors"
                   placeholder="John Doe"
                 />
@@ -82,6 +114,8 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
+                  name="email"
+                  required
                   className="w-full bg-slate-50 dark:bg-slate-900/50 border border-slate-300 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors"
                   placeholder="john@example.com"
                 />
@@ -90,17 +124,33 @@ const Contact = () => {
                 <label htmlFor="message" className="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-2 transition-colors">Message</label>
                 <textarea
                   id="message"
+                  name="message"
+                  required
                   rows="4"
                   className="w-full bg-slate-50 dark:bg-slate-900/50 border border-slate-300 dark:border-slate-700 rounded-lg px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors resize-none"
                   placeholder="Hello Varshitha, I'd like to discuss..."
                 ></textarea>
               </div>
+              
+              {status === 'success' && (
+                <div className="flex items-center space-x-2 text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-500/10 p-4 rounded-lg">
+                  <CheckCircle2 className="w-5 h-5" />
+                  <span className="font-medium">sent and will reach back softly</span>
+                </div>
+              )}
+              {status === 'error' && (
+                <div className="text-red-500 text-sm font-medium">
+                  Oops! Something went wrong. Please try again later.
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="w-full flex items-center justify-center space-x-2 bg-slate-900 dark:bg-gradient-to-r dark:from-emerald-600 dark:to-teal-600 text-white rounded-lg px-6 py-4 font-medium hover:bg-[#EA4326] dark:hover:from-emerald-500 dark:hover:to-teal-500 transition-all duration-300 shadow-md hover:shadow-lg dark:hover:shadow-emerald-500/25"
+                disabled={isSubmitting}
+                className="w-full flex items-center justify-center space-x-2 bg-slate-900 dark:bg-gradient-to-r dark:from-emerald-600 dark:to-teal-600 text-white rounded-lg px-6 py-4 font-medium hover:bg-[#EA4326] dark:hover:from-emerald-500 dark:hover:to-teal-500 transition-all duration-300 shadow-md hover:shadow-lg dark:hover:shadow-emerald-500/25 disabled:opacity-70 disabled:cursor-not-allowed"
               >
-                <span>Send Message</span>
-                <Send className="w-5 h-5 ml-2" />
+                <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
+                {!isSubmitting && <Send className="w-5 h-5 ml-2" />}
               </button>
             </form>
           </div>
