@@ -9,7 +9,7 @@ const Education = () => {
       location: 'Ettimadai,Coimbatore',
       period: '2023 - 2027',
       description: ' I am basically a philomath passionate and driven individual with a keen interest in technology and innovation. Enjoy exploring AI, coding, and building practical solutions to real-world problems.With a blend of creativity and technical skills, would love to thrive in collaborative environments.Always eager to learn, continuously seek opportunities to grow and make a positive impact.',
-      achievements: ['GPA: 8.5/10', 'CSE-AI'],
+      achievements: ['GPA: 8.6/10', 'CSE-AI'],
       color: 'from-emerald-500 to-cyan-400'
     },
     {
@@ -28,7 +28,7 @@ const Education = () => {
       period: '2021',
       description: '',
       color: 'from-teal-500 to-cyan-400',
-      achievements: ['I have completed my 10th grade in the year 2023 with a score of 93.6%']
+      achievements: ['I have completed my 10th grade in the year 2021 with a score of 93.6%']
     }
   ];
 
