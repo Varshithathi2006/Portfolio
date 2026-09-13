@@ -36,7 +36,7 @@ const Contact = () => {
     <section id="contact" className="py-20 px-6 lg:px-12 mb-20 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-on-scroll">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-[#EA4326] dark:text-emerald-400 transition-colors">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-[#202020] dark:text-white transition-colors">
             Get In Touch
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto transition-colors">
@@ -54,7 +54,7 @@ const Contact = () => {
                 className="flex items-center p-4 bg-white dark:bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-200 dark:border-slate-700/50 hover:border-emerald-500/50 transition-all duration-300 group shadow-sm dark:shadow-none"
               >
                 <div className="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center mr-4 group-hover:bg-emerald-500/20 transition-colors">
-                  <Mail className="w-6 h-6 text-emerald-500 dark:text-emerald-400" />
+                  <Mail className="w-6 h-6 text-slate-800 dark:text-white" />
                 </div>
                 <div>
                   <p className="text-sm text-slate-500 dark:text-slate-400 transition-colors">Email Me At</p>
@@ -133,7 +133,7 @@ const Contact = () => {
               </div>
               
               {status === 'success' && (
-                <div className="flex items-center space-x-2 text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-500/10 p-4 rounded-lg">
+                <div className="flex items-center space-x-2 text-slate-800 dark:text-white bg-slate-100 dark:bg-slate-700 p-4 rounded-lg">
                   <CheckCircle2 className="w-5 h-5" />
                   <span className="font-medium">sent and will reach back softly</span>
                 </div>
@@ -147,7 +147,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full flex items-center justify-center space-x-2 bg-slate-900 dark:bg-gradient-to-r dark:from-emerald-600 dark:to-teal-600 text-white rounded-lg px-6 py-4 font-medium hover:bg-[#EA4326] dark:hover:from-emerald-500 dark:hover:to-teal-500 transition-all duration-300 shadow-md hover:shadow-lg dark:hover:shadow-emerald-500/25 disabled:opacity-70 disabled:cursor-not-allowed"
+                className="w-full flex items-center justify-center space-x-2 bg-[#202020] dark:bg-white text-white dark:text-black rounded-lg px-6 py-4 font-medium hover:bg-slate-700 dark:hover:bg-slate-200 transition-all duration-300 shadow-md hover:shadow-lg disabled:opacity-70 disabled:cursor-not-allowed"
               >
                 <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
                 {!isSubmitting && <Send className="w-5 h-5 ml-2" />}

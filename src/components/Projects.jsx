@@ -50,7 +50,7 @@ const Projects = () => {
       description: 'A full-stack movie recommendation platform with backend APIs, real-time database synchronization, and cloud deployment workflows.',
       icon: 'Popcorn',
       tech: ['Next.js', 'Supabase', 'REST APIs', 'Cloud Deployment'],
-      gradient: 'from-yellow-500 to-orange-400',
+      gradient: 'from-slate-700 to-slate-400',
       link: 'https://movie-inferno-dbms-cloud.vercel.app/#',
       github: 'https://github.com/Varshithathi2006/MovieInferno_DBMS_Cloud'
     }
@@ -60,7 +60,7 @@ const Projects = () => {
     <section id="projects" className="py-20 px-6 lg:px-12 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-on-scroll">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-[#EA4326] dark:text-emerald-400 transition-colors">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-[#202020] dark:text-white transition-colors">
             Featured Projects
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-400 transition-colors">
@@ -81,7 +81,7 @@ const Projects = () => {
                   <Icon className="w-8 h-8 text-white" />
                 </div>
 
-                <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors">
                   {project.title}
                 </h3>
 

@@ -18,7 +18,7 @@ const Experience = () => {
     <section id="experience" className="py-20 px-6 lg:px-12 transition-colors duration-300">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16 animate-on-scroll">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-[#EA4326] dark:text-emerald-400 transition-colors">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-[#202020] dark:text-white transition-colors">
             Experience
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-400 transition-colors">
@@ -35,7 +35,7 @@ const Experience = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2 transition-colors">{experience.role}</h3>
-                <h4 className="text-xl text-emerald-600 dark:text-emerald-300 transition-colors">{experience.company}</h4>
+                <h4 className="text-xl text-slate-800 dark:text-white transition-colors">{experience.company}</h4>
               </div>
             </div>
 

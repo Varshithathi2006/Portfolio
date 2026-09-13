@@ -46,7 +46,7 @@ const Awards = () => {
       date: '2026',
       description: 'Presented research on automated battery materials data extraction from scientific literature using LLMs and explainable AI.',
       icon: Award,
-      color: 'from-yellow-500 to-orange-400'
+      color: 'from-slate-700 to-slate-400'
     },
     {
       title: 'Full Stack (MERN) Course',
@@ -80,7 +80,7 @@ const Awards = () => {
     <section id="awards" className="py-20 px-6 lg:px-12 mb-20 transition-colors duration-300">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16 animate-on-scroll">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-[#EA4326] dark:text-emerald-400 transition-colors">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-[#202020] dark:text-white transition-colors">
             Awards & Recognition
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-400 transition-colors">
@@ -117,7 +117,7 @@ const Awards = () => {
                     <div className="flex-1">
                       <h3 className="text-xl font-bold mb-2 transition-colors">
                         {award.link ? (
-                          <a href={award.link} target="_blank" rel="noopener noreferrer" className="text-slate-900 dark:text-white hover:text-[#EA4326] dark:hover:text-emerald-400 hover:underline transition-colors duration-300">
+                          <a href={award.link} target="_blank" rel="noopener noreferrer" className="text-slate-900 dark:text-white hover:text-slate-600 dark:hover:text-slate-300 hover:underline transition-colors duration-300">
                             {award.title}
                           </a>
                         ) : (
@@ -125,7 +125,7 @@ const Awards = () => {
                         )}
                       </h3>
                       <div className="flex items-center space-x-4 mb-3">
-                        <span className="text-[#EA4326] dark:text-emerald-400 font-semibold transition-colors">{award.organization}</span>
+                        <span className="text-[#202020] dark:text-white font-semibold transition-colors">{award.organization}</span>
                         {award.date && <span className="text-slate-500 dark:text-slate-400 transition-colors">{award.date}</span>}
                       </div>
                       <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-4 transition-colors">{award.description}</p>

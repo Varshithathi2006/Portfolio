@@ -65,7 +65,7 @@ const Card = ({ title, text, imageUrl, index, total, range }) => {
 
                 {/* Content Side */}
                 <div className="w-full md:w-1/2 flex flex-col justify-center">
-                    <h3 className="text-3xl md:text-5xl font-bold text-[#EA4326] dark:text-emerald-400 mb-6 transition-colors">
+                    <h3 className="text-3xl md:text-5xl font-bold text-[#202020] dark:text-white mb-6 transition-colors">
                         {title}
                     </h3>
                     <StoryText text={text} />
@@ -104,7 +104,7 @@ const ScrollStory = () => {
     return (
         <div ref={containerRef} className="relative bg-white dark:bg-slate-950 pb-40 transition-colors duration-300">
             <div className="pt-20 pb-10 text-center sticky top-0 z-0 opacity-80">
-                <h2 className="text-4xl font-bold text-[#EA4326] dark:text-white mb-2 transition-colors">My Journey</h2>
+                <h2 className="text-4xl font-bold text-[#202020] dark:text-white mb-2 transition-colors">My Journey</h2>
                 <p className="text-slate-600 dark:text-gray-400 transition-colors">Scroll to explore</p>
             </div>
 

@@ -31,13 +31,13 @@ const Skills = () => {
       title: 'Deployment & Tools',
       icon: Code2,
       skills: ['REST APIs', 'Docker', 'Supabase', 'Streamlit', 'Firebase', 'Vercel', 'OpenMetadata 2.0'],
-      color: 'from-orange-500 to-red-400'
+      color: 'from-slate-800 to-slate-500'
     },
     {
       title: 'Web Development',
       icon: TrendingUp,
       skills: ['React', 'Next.js', 'JavaScript', 'Tailwind CSS', 'Cloud Deployment'],
-      color: 'from-yellow-500 to-orange-400'
+      color: 'from-slate-700 to-slate-400'
     }
   ];
 
@@ -45,7 +45,7 @@ const Skills = () => {
     <section id="skills" className="py-20 px-6 lg:px-12 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-on-scroll">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-[#EA4326] dark:text-emerald-400 transition-colors">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-[#202020] dark:text-white transition-colors">
             Technical Skills
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-400 transition-colors">

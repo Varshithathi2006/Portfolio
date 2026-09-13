@@ -10,7 +10,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex space-x-6">
-          <a href="#" className="text-slate-500 dark:text-slate-400 hover:text-[#EA4326] dark:hover:text-emerald-400 transition-colors font-medium">
+          <a href="#" className="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors font-medium">
             Back to Top
           </a>
         </div>
