@@ -3,6 +3,7 @@ import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import profileImg from '../assets/me.png';
 import resumePDF from '../assets/Varshitha_Updated_Resume.pdf';
 
+
 const Hero = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white dark:bg-slate-950 px-4 transition-colors duration-300">
@@ -17,12 +18,12 @@ const Hero = () => {
       </div>
 
       {/* Foreground object (Profile Image) layered over text */}
-      <div className="relative z-10 flex flex-col items-center mt-12 w-full max-w-5xl">
-        <div className="w-64 h-80 md:w-80 md:h-[26rem] rounded-[2rem] overflow-hidden shadow-2xl transform hover:scale-105 hover:-rotate-2 transition-all duration-500 mb-8 border-8 border-white dark:border-slate-800 bg-slate-100 dark:bg-slate-800">
+      <div className="relative z-10 flex flex-col items-center mt-12 w-full max-w-3xl">
+        <div className="w-full max-w-xl aspect-[1.36] flex items-center justify-center rounded-[2rem] overflow-hidden shadow-2xl transform hover:scale-105 hover:-rotate-2 transition-all duration-500 mb-8 border-8 border-white dark:border-slate-800 bg-slate-100 dark:bg-slate-800">
           <img
             src={profileImg}
             alt="Varshitha"
-            className="w-full h-full object-contain"
+            className="block max-w-full max-h-full w-auto h-auto object-contain object-center"
           />
         </div>
         
