@@ -7,21 +7,29 @@ import genJournalsImage from '../assets/image.png';
 const Awards = () => {
   const awards = [
     {
-      title: 'IEEE Conference Paper Presenter',
-      organization: 'ETIS, Trivandrum (2024)',
-      date: '2024',
-      description: 'Presented paper at IEEE Conference on Time-Frequency Analysis of PQD (MATLAB); published on IEEE Xplore.',
-      link: 'https://ieeexplore.ieee.org/document/10961578',
-      icon: Trophy,
-      color: 'from-emerald-500 to-teal-400'
-    },
-    {
       title: 'Finalist, Cubicle Code 5.0 Hackathon',
       organization: 'Geek Rooms with Pathway & TRAE at Microsoft, Bangalore',
       date: '2025',
       description: 'Recognized for building innovative and efficient solutions in the Cubicle Code 5.0 hackathon.',
       icon: Medal,
       color: 'from-cyan-500 to-emerald-400'
+    },
+    {
+      title: 'IEEE Conference Paper - ETIS 2024',
+      organization: 'Trivandrum',
+      date: '2024',
+      description: 'Co-authored Time-Frequency Analysis of Power Quality Disturbances, published on IEEE Xplore.',
+      link: 'https://ieeexplore.ieee.org/document/10961578',
+      icon: Trophy,
+      color: 'from-emerald-500 to-teal-400'
+    },
+    {
+      title: 'Finalist, HackBLR',
+      organization: 'National-level AI and software engineering hackathon',
+      date: '2026',
+      description: 'Recognized as a finalist for building an innovative AI solution.',
+      icon: Medal,
+      color: 'from-teal-500 to-cyan-400'
     },
     {
       title: 'Finalist, GenAI Hackathon',
@@ -31,6 +39,14 @@ const Awards = () => {
       icon: Medal,
       color: 'from-teal-500 to-emerald-400',
       imageUrl: genJournalsImage
+    },
+    {
+      title: 'Battery Materials Data Extraction Using LLMs and XAI',
+      organization: 'ReCCAP, IIT Palakkad',
+      date: '2026',
+      description: 'Presented research on automated battery materials data extraction from scientific literature using LLMs and explainable AI.',
+      icon: Award,
+      color: 'from-yellow-500 to-orange-400'
     },
     {
       title: 'Full Stack (MERN) Course',

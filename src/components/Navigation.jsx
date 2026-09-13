@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, Code, Briefcase, GraduationCap, Award, Mail } from 'lucide-react';
+import { User, Code, Briefcase, GraduationCap, Award, Mail, Building2 } from 'lucide-react';
 
 const Navigation = () => {
   const scrollToSection = (id) => {
@@ -13,6 +13,7 @@ const Navigation = () => {
     { id: 'hero', icon: User, label: 'About' },
     { id: 'skills', icon: Code, label: 'Skills' },
     { id: 'projects', icon: Briefcase, label: 'Projects' },
+    { id: 'experience', icon: Building2, label: 'Experience' },
     { id: 'education', icon: GraduationCap, label: 'Education' },
     { id: 'awards', icon: Award, label: 'Awards' },
     { id: 'contact', icon: Mail, label: 'Contact' }

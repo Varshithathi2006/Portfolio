@@ -4,39 +4,39 @@ import { Brain, Code2, Database, Cpu, TrendingUp, Zap } from 'lucide-react';
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Machine Learning',
+      title: 'Programming',
       icon: Brain,
-      skills: ['Python', 'Scikit-learn', 'Machine Learning', 'Predictive Modeling'],
+      skills: ['Python', 'SQL', 'C', 'C++'],
       color: 'from-emerald-500 to-cyan-400'
     },
     {
-      title: 'Deep Learning',
+      title: 'AI/ML',
       icon: Zap,
-      skills: ['TensorFlow', 'PyTorch', 'Neural Networks', 'Computer Vision'],
+      skills: ['PyTorch', 'TensorFlow', 'Scikit-learn', 'OpenCV', 'Hugging Face Transformers'],
       color: 'from-teal-500 to-cyan-400'
     },
     {
-      title: 'Big Data & Analytics',
+      title: 'LLMs & Data AI',
       icon: Database,
-      skills: ['Apache Spark', 'Big Data', 'Data Analysis', 'Pandas'],
+      skills: ['NLP', 'RAG', 'GraphRAG', 'LangChain', 'Semantic Layer', 'Cube'],
       color: 'from-cyan-500 to-emerald-400'
     },
     {
-      title: 'Cybersecurity',
+      title: 'Data & Analytics',
       icon: Cpu,
-      skills: ['Network Security', 'Vulnerability Analytics', 'Phishing Detection', 'Cryptography'],
+      skills: ['Pandas', 'NumPy', 'Matplotlib', 'Data Visualization'],
       color: 'from-green-500 to-teal-400'
     },
     {
-      title: 'Programming & Web',
+      title: 'Deployment & Tools',
       icon: Code2,
-      skills: ['Python', 'JavaScript', 'React', 'Tailwind CSS', 'SQL'],
+      skills: ['REST APIs', 'Docker', 'Supabase', 'Streamlit', 'Firebase', 'Vercel', 'OpenMetadata 2.0'],
       color: 'from-orange-500 to-red-400'
     },
     {
-      title: 'Tools & Technologies',
+      title: 'Web Development',
       icon: TrendingUp,
-      skills: ['Git', 'GitHub', 'Cloud Computing', 'Jupyter', 'Linux'],
+      skills: ['React', 'Next.js', 'JavaScript', 'Tailwind CSS', 'Cloud Deployment'],
       color: 'from-yellow-500 to-orange-400'
     }
   ];

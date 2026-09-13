@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Experience from './components/Experience';
 import Education from './components/Education';
 import Awards from './components/Awards';
 import ScrollStory from './components/ScrollStory';
@@ -62,6 +63,7 @@ function App() {
         <ScrollStory />
         <Skills />
         <Projects />
+        <Experience />
         <Education />
         <Awards />
         <Contact />

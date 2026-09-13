@@ -32,10 +32,12 @@ const Hero = () => {
             Varshitha
           </h2>
           <p className="text-lg md:text-xl text-[#EA4326] dark:text-emerald-400 font-bold mb-4 uppercase tracking-wider transition-colors duration-300">
-            AI Engineering Student
+            AI/ML Intern @ Michelin AIM
           </p>
           <p className="text-slate-600 dark:text-slate-300 font-medium mb-8 leading-relaxed transition-colors duration-300">
-            Building intelligent systems to solve real-world problems. Fusing Machine Learning, Big Data, and modern robust design.
+            Building intelligent systems with LLMs, NLP, semantic layers, and machine learning to solve real-world data problems.
+            <br /><br />
+            I am also open to commercial projects and collaborations. I enjoy building beyond my regular work and exploring ideas that can grow into real-world products and businesses.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">

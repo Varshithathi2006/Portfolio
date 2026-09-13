@@ -19,8 +19,17 @@ const iconMap = {
 const Projects = () => {
   const projects = [
     {
-      title: 'Oil Spill Detection',
-      description: 'An AI-powered system designed to detect oil spills from satellite imagery using advanced computer vision techniques, helping protect marine ecosystems.',
+      title: 'AI-Based Legal Assistant & Case Retrieval System',
+      description: 'An AI-based legal assistant and case retrieval system designed to help users interact with legal information through intelligent retrieval and natural-language and speech-based interaction.',
+      icon: 'MessageCircle',
+      tech: ['Artificial Intelligence', 'NLP', 'Speech Processing', 'Information Retrieval', 'Legal Document Retrieval', 'Question Answering'],
+      gradient: 'from-indigo-500 to-cyan-400',
+      link: '#',
+      github: 'https://github.com/Varshithathi2006/Legal-Speech-project'
+    },
+    {
+      title: 'Oil Spill Drift Forecasting',
+      description: 'A CNN-LSTM-Attention forecasting system that predicts oil spill movement using SAR imagery, ocean currents, wind fields, and bathymetry.',
       icon: 'Waves',
       tech: ['Python', 'Deep Learning', 'Computer Vision'],
       gradient: 'from-emerald-500 to-cyan-400',
@@ -28,49 +37,22 @@ const Projects = () => {
       github: 'https://github.com/Varshithathi2006/Oil_Spill_Detection'
     },
     {
-      title: 'GitHub Vulnerability Analytics',
-      description: 'A Big Data analytics pipeline that processes and analyzes vulnerability data from GitHub repositories to uncover security trends and insights.',
-      icon: 'ShieldCheck',
-      tech: ['Big Data', 'Spark', 'Python', 'Analytics'],
+      title: 'Battery Data Extraction - LLM + XAI Pipeline',
+      description: 'A document analytics pipeline that extracts battery-performance metrics from scientific literature and produces explainable visual reports and CSV exports.',
+      icon: 'LineChart',
+      tech: ['Python', 'LLMs', 'XAI', 'Data Visualization'],
       gradient: 'from-teal-500 to-cyan-400',
       link: '#',
-      github: 'https://github.com/Varshithathi2006/GitHub_Vulnerability_Analytics_using_BigData'
+      github: 'https://github.com/Varshithathi2006/Battery_DB_Extraction'
     },
     {
-      title: 'ABMEL – Marketing Engagement Loop',
-      description: 'A predictive marketing analytics model that uses machine learning to optimize user engagement and improve marketing campaign ROI.',
-      icon: 'LineChart',
-      tech: ['Machine Learning', 'Data Analysis', 'Python'],
-      gradient: 'from-cyan-500 to-emerald-400',
-      link: '#',
-      github: 'https://github.com/Varshithathi2006/ABMEL---Marketing-Engagement-loop'
-    },
-    {
-      title: 'DDoS Detection in SDN',
-      description: 'Real-time DDoS detection and mitigation system in Software Defined Networking environments utilizing machine learning algorithms.',
-      icon: 'Activity',
-      tech: ['Python', 'Mininet', 'RYU', 'ML Models'],
-      gradient: 'from-green-500 to-teal-400',
-      link: '#',
-      github: 'https://github.com/Varshithathi2006/DDoS-Detection-using-ML-in-SDN-env'
-    },
-    {
-      title: 'MovieInferno DBMS Cloud',
-      description: 'Cloud-based movie management platform integrating a structured database with an AI chatbot for personalized movie suggestions.',
+      title: 'Movie Inferno - AI Recommendation Platform',
+      description: 'A full-stack movie recommendation platform with backend APIs, real-time database synchronization, and cloud deployment workflows.',
       icon: 'Popcorn',
-      tech: ['Next.js', 'Supabase', 'Cloud DB', 'API'],
+      tech: ['Next.js', 'Supabase', 'REST APIs', 'Cloud Deployment'],
       gradient: 'from-yellow-500 to-orange-400',
       link: 'https://movie-inferno-dbms-cloud.vercel.app/#',
       github: 'https://github.com/Varshithathi2006/MovieInferno_DBMS_Cloud'
-    },
-    {
-      title: 'Cryptography Web Applications',
-      description: 'A suite of web-based cryptographic tools demonstrating various encryption algorithms and secure communication protocols.',
-      icon: 'ShieldCheck',
-      tech: ['Cryptography', 'Web Security', 'Algorithms'],
-      gradient: 'from-red-500 to-orange-400',
-      link: '#',
-      github: 'https://github.com/Varshithathi2006/Cryptography_and_its_web_applications'
     }
   ];
 
